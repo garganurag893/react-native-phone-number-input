@@ -1,0 +1,22 @@
+{
+  "name": "react-native-phone-number-input",
+  "version": "1.0.0",
+  "description": "PhoneInput Component",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn test"
+  },
+  "author": "anuraggarg",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "dependencies": {
+    "google-libphonenumber": "^3.2.10",
+    "react-native-country-picker-modal": "^1.11.0"
+  },
+  "devDependencies": {
+    "metro-react-native-babel-preset": "^0.61.0"
+  }
+}
