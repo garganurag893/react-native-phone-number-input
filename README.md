@@ -149,6 +149,10 @@ export default App;
 
 YES
 
+### NSURLResponse allHeaderFields: unrecognized selector sent to instance XX crash?
+
+Upgrade `versions['Flipper'] ||= '~> 0.37.0'` in podfile.
+
 ## Contributing
 
 > To get started...
