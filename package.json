@@ -1,11 +1,11 @@
 {
   "name": "react-native-phone-number-input",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Phone Number Input Component",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "scripts": {
-    "test": "yarn test"
+    "test": "echo \"Error: no test specified\""
   },
   "repository": {
     "type": "git",
