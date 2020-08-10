@@ -7,6 +7,10 @@
   "scripts": {
     "test": "yarn test"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garganurag893/react-native-phone-number-input.git"
+  },
   "author": "anuraggarg",
   "license": "MIT",
   "peerDependencies": {
