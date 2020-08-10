@@ -12,6 +12,19 @@
     "react": "*",
     "react-native": "*"
   },
+  "keywords": [
+    "react-native",
+    "phone",
+    "telephone",
+    "phone input",
+    "input",
+    "tel",
+    "input text",
+    "international",
+    "react-native-component",
+    "ios",
+    "android"
+  ],
   "dependencies": {
     "google-libphonenumber": "^3.2.10",
     "react-native-country-picker-modal": "^1.11.0"
