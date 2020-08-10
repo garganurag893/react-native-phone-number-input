@@ -1,5 +1,5 @@
 <p align="center">
-<a href="https://twitter.com/AnuragG94634191"><img src="./gif/Phone_Number_Input.gif" title="Anurag Garg"  alt="Anurag Garg" style="height:400px;box-shadow: 0 20px 30px 3px rgba(9, 9, 16, 0.2);"></a>
+<a href="https://twitter.com/AnuragG94634191"><img src="./gif/Phone_Number_Input.gif" height="400" title="Anurag Garg"  alt="Anurag Garg" style="box-shadow: 0 20px 30px 3px rgba(9, 9, 16, 0.2);"></a>
 </p>
 
 <h1 align="center">React Native Phone Number Input
