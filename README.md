@@ -25,6 +25,7 @@
 - [Methods](#methods)
 - [FAQ](#faq)
   - [Is it supported and tested both on android and iOS?](#is-it-supported-and-tested-both-on-android-and-ios)
+  - [NSURLResponse allHeaderFields: unrecognized selector sent to instance XX crash?](#nsurlresponse-allheaderfields-unrecognized-selector-sent-to-instance-xx-crash)
 - [Contributing](#contributing)
   - [Step 1](#step-1)
   - [Step 2](#step-2)
@@ -104,7 +105,7 @@ const App: React.FC = () => {
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              const checkValid = phoneInput.current?.isValidNumber();
+              const checkValid = phoneInput.current?.isValidNumber(value);
               setShowMessage(true);
               setValid(checkValid ? checkValid : false);
             }}
@@ -141,7 +142,7 @@ export default App;
 
 - `getCountryCode`: () => [CountryCode](https://github.com/xcarpentier/react-native-country-picker-modal/blob/master/src/types.ts#L252)
 - `getCallingCode`: () => string | undefined
-- `isValidNumber`: () => boolean
+- `isValidNumber`: (number: number) => boolean
 
 ## FAQ
 
