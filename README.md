@@ -104,7 +104,7 @@ const App: React.FC = () => {
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              const checkValid = phoneInput.current?.isValidNumber();
+              const checkValid = phoneInput.current?.isValidNumber(valid);
               setShowMessage(true);
               setValid(checkValid ? checkValid : false);
             }}
@@ -141,7 +141,7 @@ export default App;
 
 - `getCountryCode`: () => [CountryCode](https://github.com/xcarpentier/react-native-country-picker-modal/blob/master/src/types.ts#L252)
 - `getCallingCode`: () => string | undefined
-- `isValidNumber`: () => boolean
+- `isValidNumber`: (number) => boolean
 
 ## FAQ
 
