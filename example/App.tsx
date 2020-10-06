@@ -14,6 +14,7 @@ const App = () => {
   const [value, setValue] = useState('');
   const [formattedValue, setFormattedValue] = useState('');
   const [valid, setValid] = useState(false);
+  const [disabled, setDisabled] = useState(false);
   const [showMessage, setShowMessage] = useState(false);
   const phoneInput = useRef<PhoneInput>(null);
   return (
@@ -38,6 +39,7 @@ const App = () => {
             onChangeFormattedText={(text) => {
               setFormattedValue(text);
             }}
+            disabled={disabled}
             withDarkTheme
             withShadow
             autoFocus
@@ -50,6 +52,13 @@ const App = () => {
               setValid(checkValid ? checkValid : false);
             }}>
             <Text>Check</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => {
+              setDisabled(!disabled);
+            }}>
+            <Text>{disabled ? 'Activate' : 'Disable'}</Text>
           </TouchableOpacity>
         </SafeAreaView>
       </View>

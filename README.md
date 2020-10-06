@@ -130,9 +130,12 @@ export default App;
 - `defaultValue?`: string
 - `disabled?`: boolean
 - `disableArrowIcon?`: boolean
+- `placeholder?`: string;
 - `onChangeText?`: (text: string) => void;
 - `onChangeFormattedText?`: (text: string) => void;
 - `containerStyle?`: `StyleProp<ViewStyle>`;
+- `textContainerStyle?`: `StyleProp<ViewStyle>`;
+- `renderDropdownImage?`: `JSX.Element`;
 - `textInputProps?`: [TextInputProps](https://reactnative.dev/docs/textinput);
 - `textInputStyle?`: `StyleProp<TextStyle>`;
 - `codeTextStyle?`: `StyleProp<TextStyle>`;
@@ -142,7 +145,7 @@ export default App;
 
 - `getCountryCode`: () => [CountryCode](https://github.com/xcarpentier/react-native-country-picker-modal/blob/master/src/types.ts#L252)
 - `getCallingCode`: () => string | undefined
-- `isValidNumber`: (number: number) => boolean
+- `isValidNumber`: (number: string) => boolean
 
 ## FAQ
 
@@ -189,7 +192,6 @@ Reach out to me at one of the following places!
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2020 © <a href="https://twitter.com/AnuragG94634191" target="_blank">Anurag Garg</a>.
 
 ## Hire
 

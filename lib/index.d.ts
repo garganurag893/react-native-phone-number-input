@@ -13,8 +13,10 @@ export interface PhoneInputProps {
   defaultValue?: string;
   disabled?: boolean;
   disableArrowIcon?: boolean;
+  placeholder?: string;
   onChangeText?: (text: string) => void;
   onChangeFormattedText?: (text: string) => void;
+  renderDropdownImage?: JSX.Element;
   containerStyle?: StyleProp<ViewStyle>;
   textContainerStyle?: StyleProp<ViewStyle>;
   textInputProps?: TextInputProps;
@@ -288,7 +290,7 @@ export default class PhoneInput extends Component<
     | "HK"
     | "AX";
   getCallingCode: () => string | undefined;
-  isValidNumber: (number: number) => boolean;
+  isValidNumber: (number: string) => boolean;
   onSelect: (country: Country) => void;
   onChangeText: (text: string) => void;
   render(): JSX.Element;

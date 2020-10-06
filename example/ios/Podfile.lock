@@ -355,7 +355,6 @@ SPEC REPOS:
     - Flipper
     - Flipper-DoubleConversion
     - Flipper-Glog
-    - FlipperKit
   https://github.com/cocoapods/specs.git:
     - CocoaAsyncSocket
     - CocoaLibEvent
