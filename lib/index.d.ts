@@ -288,7 +288,7 @@ export default class PhoneInput extends Component<
     | "HK"
     | "AX";
   getCallingCode: () => string | undefined;
-  isValidNumber: (number: number) => boolean;
+  isValidNumber: (number: string) => boolean;
   onSelect: (country: Country) => void;
   onChangeText: (text: string) => void;
   render(): JSX.Element;
