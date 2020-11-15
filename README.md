@@ -128,6 +128,7 @@ export default App;
 - `withShadow?`: boolean
 - `autoFocus?`: boolean
 - `defaultValue?`: string
+- `value?`: string
 - `disabled?`: boolean
 - `disableArrowIcon?`: boolean
 - `placeholder?`: string;
@@ -140,11 +141,14 @@ export default App;
 - `textInputStyle?`: `StyleProp<TextStyle>`;
 - `codeTextStyle?`: `StyleProp<TextStyle>`;
 - `flagButtonStyle?`: `StyleProp<ViewStyle>`;
+- `filterProps?`: CountryFilterProps;
+- `countryPickerProps?`: any;
 
 ## Methods
 
 - `getCountryCode`: () => [CountryCode](https://github.com/xcarpentier/react-native-country-picker-modal/blob/master/src/types.ts#L252)
 - `getCallingCode`: () => string | undefined
+- `getNumberAfterPossiblyEliminatingZero`: () => {number: string , formattedNumber: string };
 - `isValidNumber`: (number: string) => boolean
 
 ## FAQ
