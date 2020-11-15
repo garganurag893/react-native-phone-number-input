@@ -12,6 +12,7 @@ import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 const App = () => {
   const [value, setValue] = useState('');
+  const [countryCode, setCountryCode] = useState('');
   const [formattedValue, setFormattedValue] = useState('');
   const [valid, setValid] = useState(false);
   const [disabled, setDisabled] = useState(false);
@@ -24,6 +25,7 @@ const App = () => {
         <SafeAreaView style={styles.wrapper}>
           {showMessage && (
             <View style={styles.message}>
+              <Text>Country Code : {countryCode}</Text>
               <Text>Value : {value}</Text>
               <Text>Formatted Value : {formattedValue}</Text>
               <Text>Valid : {valid ? 'true' : 'false'}</Text>
@@ -32,13 +34,15 @@ const App = () => {
           <PhoneInput
             ref={phoneInput}
             defaultValue={value}
-            defaultCode="DM"
+            defaultCode="IN"
             onChangeText={(text) => {
               setValue(text);
             }}
             onChangeFormattedText={(text) => {
               setFormattedValue(text);
+              setCountryCode(phoneInput.current?.getCountryCode() || '');
             }}
+            countryPickerProps={{withAlphaFilter:true}}
             disabled={disabled}
             withDarkTheme
             withShadow
@@ -50,6 +54,7 @@ const App = () => {
               const checkValid = phoneInput.current?.isValidNumber(value);
               setShowMessage(true);
               setValid(checkValid ? checkValid : false);
+              setCountryCode(phoneInput.current?.getCountryCode() || '');
             }}>
             <Text>Check</Text>
           </TouchableOpacity>
