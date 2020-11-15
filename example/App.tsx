@@ -55,6 +55,8 @@ const App = () => {
               setShowMessage(true);
               setValid(checkValid ? checkValid : false);
               setCountryCode(phoneInput.current?.getCountryCode() || '');
+              let getNumberAfterPossiblyEliminatingZero = phoneInput.current?.getNumberAfterPossiblyEliminatingZero();
+              console.log(getNumberAfterPossiblyEliminatingZero);
             }}>
             <Text>Check</Text>
           </TouchableOpacity>
