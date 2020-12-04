@@ -25,6 +25,8 @@ export interface PhoneInputProps {
   textInputStyle?: StyleProp<TextStyle>;
   codeTextStyle?: StyleProp<TextStyle>;
   flagButtonStyle?: StyleProp<ViewStyle>;
+  countryPickerButtonStyle?: StyleProp<ViewStyle>;
+  layout?: "first" | "second";
   filterProps?: CountryFilterProps;
   countryPickerProps?: any;
 }

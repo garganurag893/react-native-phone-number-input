@@ -35,6 +35,7 @@ const App = () => {
             ref={phoneInput}
             defaultValue={value}
             defaultCode="IN"
+            layout="first"
             onChangeText={(text) => {
               setValue(text);
             }}
@@ -58,14 +59,14 @@ const App = () => {
               let getNumberAfterPossiblyEliminatingZero = phoneInput.current?.getNumberAfterPossiblyEliminatingZero();
               console.log(getNumberAfterPossiblyEliminatingZero);
             }}>
-            <Text>Check</Text>
+            <Text style={styles.buttonText}>Check</Text>
           </TouchableOpacity>
           <TouchableOpacity
-            style={styles.button}
+            style={[styles.button, disabled ? {} : styles.redColor]}
             onPress={() => {
               setDisabled(!disabled);
             }}>
-            <Text>{disabled ? 'Activate' : 'Disable'}</Text>
+            <Text style={styles.buttonText}>{disabled ? 'Activate' : 'Disable'}</Text>
           </TouchableOpacity>
         </SafeAreaView>
       </View>
@@ -86,11 +87,25 @@ const styles = StyleSheet.create({
   button: {
     marginTop: 20,
     height: 50,
-    width: 100,
+    width: 300,
     justifyContent: 'center',
     alignItems: 'center',
-    borderWidth: 1,
-    borderRadius: 5,
+    backgroundColor: '#7CDB8A',
+    shadowColor: 'rgba(0,0,0,0.4)',
+    shadowOffset: {
+      width: 1,
+      height: 5,
+    },
+    shadowOpacity: 0.34,
+    shadowRadius: 6.27,
+    elevation: 10,
+  },
+  buttonText:{
+    color: 'white',
+    fontSize: 14,
+  },
+  redColor: {
+    backgroundColor: '#F57777'
   },
   message: {
     borderWidth: 1,

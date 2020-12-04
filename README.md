@@ -1,6 +1,9 @@
-<p align="center">
-<img src="./gif/Phone_Number_Input.gif" height="400" title="Anurag Garg"   alt="Anurag Garg" style="box-shadow: 0 20px 30px 3px rgba(9, 9, 16, 0.2);">
-</p>
+<div align="center">
+  <img src="./gif/Phone_Number_Input_Layout_1.gif" height="400" title="Anurag Garg"   alt="Anurag Garg" style="box-shadow: 0 20px 30px 3px rgba(9, 9, 16, 0.2);">
+  <img src="./gif/Phone_Number_Input_Layout_2.gif" height="400" title="Anurag Garg"   alt="Anurag Garg" style="box-shadow: 0 20px 30px 3px rgba(9, 9, 16, 0.2);">
+</div>
+
+<br>
 
 <h1 align="center">React Native Phone Number Input
 </h1>
@@ -8,12 +11,19 @@
 <p align="center">Performance oriented React Native Phone Number Input with typings and proper validation for any country.
 </p>
 
+<h6 align="center">Made with ❤️ by developer for developers</h6>
+
+<br>
 <p align="center">
 <img src="http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square" alt="build"/>
 <img src="https://img.shields.io/github/issues/garganurag893/react-native-phone-number-input" alt="build"/>
 <img src="https://img.shields.io/github/issues-pr/garganurag893/react-native-phone-number-input" alt="build"/>
 <img src="http://img.shields.io/:license-mit-blue.svg?style=flat-square" alt="build"/>
 </p>
+
+## Want to show your love?
+<p>Click on 🌟 button.</p>
+
 
 ## Table of Contents
 
@@ -92,6 +102,7 @@ const App: React.FC = () => {
             ref={phoneInput}
             defaultValue={value}
             defaultCode="DM"
+            layout="first"
             onChangeText={(text) => {
               setValue(text);
             }}
@@ -141,6 +152,8 @@ export default App;
 - `textInputStyle?`: `StyleProp<TextStyle>`;
 - `codeTextStyle?`: `StyleProp<TextStyle>`;
 - `flagButtonStyle?`: `StyleProp<ViewStyle>`;
+- `countryPickerButtonStyle` : `StyleProp<ViewStyle>`;
+- `layout?`: "first" | "second";
 - `filterProps?`: CountryFilterProps;
 - `countryPickerProps?`: any;
 
