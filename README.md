@@ -143,6 +143,7 @@ export default App;
 - `disabled?`: boolean
 - `disableArrowIcon?`: boolean
 - `placeholder?`: string;
+- `onChangeCountry?`: (country: Country) => void;
 - `onChangeText?`: (text: string) => void;
 - `onChangeFormattedText?`: (text: string) => void;
 - `containerStyle?`: `StyleProp<ViewStyle>`;
