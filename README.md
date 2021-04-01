@@ -142,7 +142,9 @@ export default App;
 - `value?`: string
 - `disabled?`: boolean
 - `disableArrowIcon?`: boolean
+- `maxLength?`: number
 - `placeholder?`: string;
+- `placeholderTextColor?`: ColorValue
 - `onChangeCountry?`: (country: Country) => void;
 - `onChangeText?`: (text: string) => void;
 - `onChangeFormattedText?`: (text: string) => void;
