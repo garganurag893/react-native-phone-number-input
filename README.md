@@ -135,16 +135,16 @@ export default App;
 ## Props
 
 - `defaultCode?`: [CountryCode](https://github.com/xcarpentier/react-native-country-picker-modal/blob/master/src/types.ts#L252)
-- `withDarkTheme?`: boolean
-- `withShadow?`: boolean
-- `autoFocus?`: boolean
-- `defaultValue?`: string
-- `value?`: string
-- `disabled?`: boolean
-- `disableArrowIcon?`: boolean
-- `maxLength?`: number
+- `withDarkTheme?`: boolean;
+- `withShadow?`: boolean;
+- `autoFocus?`: boolean;
+- `defaultValue?`: string;
+- `value?`: string;
+- `disabled?`: boolean;
+- `disableArrowIcon?`: boolean;
+- `maxLength?`: number;
 - `placeholder?`: string;
-- `placeholderTextColor?`: ColorValue
+- `placeholderTextColor?`: ColorValue;
 - `onChangeCountry?`: (country: Country) => void;
 - `onChangeText?`: (text: string) => void;
 - `onChangeFormattedText?`: (text: string) => void;
