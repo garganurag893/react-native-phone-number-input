@@ -303,3 +303,5 @@ export default class PhoneInput extends Component<
   onChangeText: (text: string) => void;
   render(): JSX.Element;
 }
+
+export function isValidNumber(number: string, countryCode: CountryCode ): boolean;
