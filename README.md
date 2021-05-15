@@ -102,6 +102,8 @@ const App: React.FC = () => {
             ref={phoneInput}
             defaultValue={value}
             defaultCode="DM"
+            placeholder="Mobile Number"
+            placeholderTextColor="rgba(0,0,0,0.35)"
             layout="first"
             onChangeText={(text) => {
               setValue(text);
@@ -143,6 +145,7 @@ export default App;
 - `disabled?`: boolean
 - `disableArrowIcon?`: boolean
 - `placeholder?`: string;
+- `placeholderTextColor?`: string;
 - `onChangeCountry?`: (country: Country) => void;
 - `onChangeText?`: (text: string) => void;
 - `onChangeFormattedText?`: (text: string) => void;
