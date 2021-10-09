@@ -157,6 +157,7 @@ export default App;
 - `layout?`: "first" | "second";
 - `filterProps?`: CountryFilterProps;
 - `countryPickerProps?`: any;
+- `flatFlags?`: boolean;
 
 ## Methods
 
