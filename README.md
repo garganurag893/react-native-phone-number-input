@@ -164,6 +164,7 @@ export default App;
 - `getCallingCode`: () => string | undefined
 - `getNumberAfterPossiblyEliminatingZero`: () => {number: string , formattedNumber: string };
 - `isValidNumber`: (number: string) => boolean
+- `focus`: () => undefined
 
 ## FAQ
 
