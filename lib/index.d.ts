@@ -16,6 +16,7 @@ export interface PhoneInputProps {
   disabled?: boolean;
   disableArrowIcon?: boolean;
   placeholder?: string;
+  placeholderTextColor?:string;
   onChangeCountry?: (country: Country) => void;
   onChangeText?: (text: string) => void;
   onChangeFormattedText?: (text: string) => void;
