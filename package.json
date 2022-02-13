@@ -31,7 +31,7 @@
     "android"
   ],
   "dependencies": {
-    "google-libphonenumber": "^3.2.10",
+    "libphonenumber-js": "^1.9.49",
     "react-native-country-picker-modal": "^2.0.0"
   },
   "devDependencies": {
