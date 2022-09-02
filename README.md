@@ -200,9 +200,9 @@ Upgrade `versions['Flipper'] ||= '~> 0.37.0'` in podfile.
 
 Reach out to me at one of the following places!
 
-- Twitter at <a href="https://twitter.com/AnuragG94634191" target="_blank">https://twitter.com/AnuragG94634191 />
-- Medium at <a href="https://medium.com/@garganurag893" target="_blank">https://medium.com/@garganurag893 />
-- Instagram at <a href="https://www.instagram.com/the_only_anurag/" target="_blank">https://www.instagram.com/the_only_anurag/ />
+- Twitter at <a href="https://twitter.com/AnuragG94634191" target="_blank">https://twitter.com/AnuragG94634191
+- Medium at <a href="https://medium.com/@garganurag893" target="_blank">https://medium.com/@garganurag893
+- Instagram at <a href="https://www.instagram.com/the_only_anurag/" target="_blank">https://www.instagram.com/the_only_anurag
 - Email at garganurag893@gmail.com
 
 ## License
