@@ -22,11 +22,12 @@
 </p>
 
 ## Want to show your love?
-<p>Click on 🌟 button.</p>
 
+<p>Click on 🌟 button.</p>
 
 ## Table of Contents
 
+- [Want to show your love?](#want-to-show-your-love)
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
 - [Features](#features)
@@ -157,6 +158,7 @@ export default App;
 - `layout?`: "first" | "second";
 - `filterProps?`: CountryFilterProps;
 - `countryPickerProps?`: any;
+- `countryPickerTheme?`: [Theme](https://github.com/xcarpentier/react-native-country-picker-modal/blob/7611d34fa35744dbec3fbcdd9b4401494b1ba8c4/src/CountryTheme.ts#L5);
 
 ## Methods
 

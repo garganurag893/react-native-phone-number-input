@@ -31,7 +31,7 @@ export interface PhoneInputProps {
   layout?: "first" | "second";
   filterProps?: CountryFilterProps;
   countryPickerProps?: any;
-  pickerTheme?: Theme;
+  countryPickerTheme?: Theme;
 }
 export interface PhoneInputState {
   code: CallingCode | undefined;
