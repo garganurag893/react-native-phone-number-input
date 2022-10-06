@@ -31,8 +31,8 @@
     "android"
   ],
   "dependencies": {
-    "google-libphonenumber": "^3.2.10",
-    "react-native-country-picker-modal": "^2.0.0"
+    "@olegnjadocode/react-native-country-picker-modal": "^2.0.2",
+    "google-libphonenumber": "^3.2.10"
   },
   "devDependencies": {
     "metro-react-native-babel-preset": "^0.61.0"
