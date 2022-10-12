@@ -29,8 +29,8 @@ export interface PhoneInputProps {
   countryPickerButtonStyle?: StyleProp<ViewStyle>;
   layout?: "first" | "second";
   filterProps?: CountryFilterProps;
-  flagSize?: number;
   countryPickerProps?: any;
+  flagSize?: number;
 }
 export interface PhoneInputState {
   code: CallingCode | undefined;
@@ -300,15 +300,9 @@ export default class PhoneInput extends Component<
   getCallingCode: () => string | undefined;
   isValidNumber: (number: string) => boolean;
   onSelect: (country: Country) => void;
-  getNumberAfterPossiblyEliminatingZero: () => {
-    number: string;
-    formattedNumber: string;
-  };
+  getNumberAfterPossiblyEliminatingZero: () => {number: string , formattedNumber: string };
   onChangeText: (text: string) => void;
   render(): JSX.Element;
 }
 
-export function isValidNumber(
-  number: string,
-  countryCode: CountryCode
-): boolean;
+export function isValidNumber(number: string, countryCode: CountryCode ): boolean;
