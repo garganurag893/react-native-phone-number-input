@@ -5,9 +5,11 @@
 
 <br>
 
-<h1 align="center">React Native Phone Number Input
+<h1 align="center">React Native Phone Number Input (Forked from @garganurag893)
 </h1>
 
+<h4 align="center">New feature includes placeholderTextColor
+</h4>
 <p align="center">Performance oriented React Native Phone Number Input with typings and proper validation for any country.
 </p>
 
@@ -15,9 +17,8 @@
 
 <br>
 <p align="center">
-<img src="http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square" alt="build"/>
-<img src="https://img.shields.io/github/issues/garganurag893/react-native-phone-number-input" alt="build"/>
-<img src="https://img.shields.io/github/issues-pr/garganurag893/react-native-phone-number-input" alt="build"/>
+<img src="https://img.shields.io/github/issues/coderpr0grammer/react-native-phone-number-input" alt="build"/>
+<img src="https://img.shields.io/github/issues-pr/coderpr0grammer/react-native-phone-number-input" alt="build"/>
 <img src="http://img.shields.io/:license-mit-blue.svg?style=flat-square" alt="build"/>
 </p>
 
@@ -47,13 +48,13 @@
 ## Installation
 
 ```bash
-$ yarn add react-native-phone-number-input
+$ yarn add rn-phone-input-new
 ```
 
 OR
 
 ```bash
-$ npm i react-native-phone-number-input --save
+$ npm i rn-phone-input-new --save
 ```
 
 ## Features
@@ -77,7 +78,7 @@ import {
   TouchableOpacity,
   Text,
 } from "react-native";
-import PhoneInput from "react-native-phone-number-input";
+import PhoneInput from "rn-phone-input-new";
 import { Colors } from "react-native/Libraries/NewAppScreen";
 
 const App: React.FC = () => {
@@ -143,6 +144,7 @@ export default App;
 - `disabled?`: boolean
 - `disableArrowIcon?`: boolean
 - `placeholder?`: string;
+- `placeholderTextColor?`: string;
 - `onChangeCountry?`: (country: Country) => void;
 - `onChangeText?`: (text: string) => void;
 - `onChangeFormattedText?`: (text: string) => void;
@@ -186,7 +188,7 @@ Upgrade `versions['Flipper'] ||= '~> 0.37.0'` in podfile.
   - 🍴 Fork this repo!
 
 - **Option 2**
-  - 👯 Clone this repo to your local machine using `https://github.com/garganurag893/react-native-phone-number-input`
+  - 👯 Clone this repo to your local machine using `https://github.com/coderpr0grammer/react-native-phone-number-input`
 
 ### Step 2
 
@@ -194,25 +196,11 @@ Upgrade `versions['Flipper'] ||= '~> 0.37.0'` in podfile.
 
 ### Step 3
 
-- 🔃 Create a new pull request using <a href="https://github.com/garganurag893/react-native-phone-number-input" target="_blank">`https://github.com/garganurag893/react-native-phone-number-input`</a>.
+- 🔃 Create a new pull request using <a href="https://github.com/coderpr0grammer/react-native-phone-number-input" target="_blank">`https://github.com/coderpr0grammer/react-native-phone-number-input`</a>.
 
-## Support
-
-Reach out to me at one of the following places!
-
-- Twitter at <a href="https://twitter.com/AnuragG94634191" target="_blank">https://twitter.com/AnuragG94634191</a>
-- Medium at <a href="https://medium.com/@garganurag893" target="_blank">https://medium.com/@garganurag893</a>
-- Instagram at <a href="https://www.instagram.com/the_only_anurag/" target="_blank">https://www.instagram.com/the_only_anurag/</a>
-- Email at garganurag893@gmail.com
 
 ## License
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
-
-## Hire
-
-Looking for a React/React-Native Freelance Expert? Email at garganurag893@gmail.com
-
-[react-native-country-picker-modal]: https://github.com/xcarpentier/react-native-country-picker-modal
