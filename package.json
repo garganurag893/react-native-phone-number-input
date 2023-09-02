@@ -1,6 +1,6 @@
 {
-  "name": "react-native-phone-number-input",
-  "version": "2.1.0",
+  "name": "rn-phone-input-new",
+  "version": "0.0.4",
   "description": "Phone Number Input Component",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -9,9 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/garganurag893/react-native-phone-number-input.git"
+    "url": "git+https://github.com/coderpr0grammer/react-native-phone-number-input"
   },
-  "author": "anuraggarg",
+  "author": "coderpr0grammer",
   "license": "MIT",
   "peerDependencies": {
     "react": "*",
