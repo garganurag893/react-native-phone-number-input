@@ -298,10 +298,17 @@ export default class PhoneInput extends Component<
     | "AX";
   getCallingCode: () => string | undefined;
   isValidNumber: (number: string) => boolean;
+  focus: () => void;
   onSelect: (country: Country) => void;
-  getNumberAfterPossiblyEliminatingZero: () => {number: string , formattedNumber: string };
+  getNumberAfterPossiblyEliminatingZero: () => {
+    number: string;
+    formattedNumber: string;
+  };
   onChangeText: (text: string) => void;
   render(): JSX.Element;
 }
 
-export function isValidNumber(number: string, countryCode: CountryCode ): boolean;
+export function isValidNumber(
+  number: string,
+  countryCode: CountryCode
+): boolean;
