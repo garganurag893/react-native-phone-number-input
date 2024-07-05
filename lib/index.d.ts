@@ -19,6 +19,8 @@ export interface PhoneInputProps {
   onChangeCountry?: (country: Country) => void;
   onChangeText?: (text: string) => void;
   onChangeFormattedText?: (text: string) => void;
+  onBlur?: () => void;
+  onFocus?: () => void;
   renderDropdownImage?: JSX.Element;
   containerStyle?: StyleProp<ViewStyle>;
   textContainerStyle?: StyleProp<ViewStyle>;
@@ -299,9 +301,15 @@ export default class PhoneInput extends Component<
   getCallingCode: () => string | undefined;
   isValidNumber: (number: string) => boolean;
   onSelect: (country: Country) => void;
-  getNumberAfterPossiblyEliminatingZero: () => {number: string , formattedNumber: string };
+  getNumberAfterPossiblyEliminatingZero: () => {
+    number: string;
+    formattedNumber: string;
+  };
   onChangeText: (text: string) => void;
   render(): JSX.Element;
 }
 
-export function isValidNumber(number: string, countryCode: CountryCode ): boolean;
+export function isValidNumber(
+  number: string,
+  countryCode: CountryCode
+): boolean;
