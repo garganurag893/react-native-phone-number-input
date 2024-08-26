@@ -38,7 +38,7 @@ export interface PhoneInputState {
   countryCode: CountryCode;
   disabled: boolean;
 }
-export default class PhoneInput extends Component<
+class PhoneInput extends Component<
   PhoneInputProps,
   PhoneInputState
 > {
@@ -303,5 +303,11 @@ export default class PhoneInput extends Component<
   onChangeText: (text: string) => void;
   render(): JSX.Element;
 }
+
+// Define the ref-forwarding component type
+export type PhoneInput = ForwardRefExoticComponent<PhoneInputProps & RefAttributes<TextInput>>;
+
+const PhoneInput: PhoneInput = PhoneInputComponent as any;
+export default PhoneInput;
 
 export function isValidNumber(number: string, countryCode: CountryCode ): boolean;
