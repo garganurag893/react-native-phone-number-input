@@ -7,10 +7,10 @@ import CountryPicker, {
   getCallingCode,
   DARK_THEME,
   DEFAULT_THEME,
-  CountryModalProvider,
   Flag,
+  CountryFilterProps,
+  CountryPickerModalProps,
 } from "react-native-country-picker-modal";
-import { CountryFilterProps } from "react-native-country-picker-modal/lib/CountryFilter";
 export interface PhoneInputProps {
   withDarkTheme?: boolean;
   withShadow?: boolean;
@@ -34,7 +34,7 @@ export interface PhoneInputProps {
   countryPickerButtonStyle?: StyleProp<ViewStyle>;
   layout?: "first" | "second";
   filterProps?: CountryFilterProps;
-  countryPickerProps?: any;
+  countryPickerProps?: Partial<CountryPickerModalProps>;
 }
 export interface PhoneInputState {
   code: CallingCode | undefined;
@@ -322,6 +322,5 @@ export {
   getCallingCode,
   DARK_THEME,
   DEFAULT_THEME,
-  CountryModalProvider,
   Flag,
 };
